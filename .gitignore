@@ -1,0 +1,23 @@
+# Local secrets and runtime config
+config.json
+config_sleep_phone.json
+*.local.json
+.env
+
+# Generated deployment packages
+server_package/
+server_package.zip
+
+# Runtime logs and caches
+logs/
+__pycache__/
+*.py[cod]
+
+# Local capture/download artifacts
+downloads/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
