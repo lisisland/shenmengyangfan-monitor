@@ -1,0 +1,73 @@
+{
+  "company_url": "AJLY",
+  "check_in_dates": [],
+  "start_after_days": 5,
+  "days_ahead": 3,
+  "interval_seconds": 30,
+  "hot_windows": [
+    {
+      "name": "午夜新增第7天",
+      "start": "23:58",
+      "end": "00:15",
+      "interval_seconds": 5
+    },
+    {
+      "name": "早上上班后",
+      "start": "08:50",
+      "end": "09:30",
+      "interval_seconds": 15
+    },
+    {
+      "name": "上午退房高峰",
+      "start": "10:00",
+      "end": "12:30",
+      "interval_seconds": 10
+    },
+    {
+      "name": "午后处理",
+      "start": "13:30",
+      "end": "14:30",
+      "interval_seconds": 15
+    },
+    {
+      "name": "下午释放高峰",
+      "start": "14:30",
+      "end": "16:30",
+      "interval_seconds": 10
+    },
+    {
+      "name": "下班前处理",
+      "start": "17:30",
+      "end": "18:30",
+      "interval_seconds": 15
+    },
+    {
+      "name": "晚间取消补释放",
+      "start": "20:00",
+      "end": "22:30",
+      "interval_seconds": 20
+    }
+  ],
+  "request_timeout_seconds": 15,
+  "min_remain": 1,
+  "repeat_notify_minutes": 5,
+  "voice_call_enabled": true,
+  "voice_call_min_remain": 1,
+  "voice_call_cooldown_minutes": 3,
+  "store_ids": [],
+  "store_name_keywords": [],
+  "area_keywords": [],
+  "windows_notification": true,
+  "pushplus_token": "",
+  "pushplus_topic": "",
+  "pushplus_friend_tokens": [],
+  "pushplus_voice_topic": "",
+  "pushplus_voice_friend_tokens": [],
+  "pushplus_retry_simple": true,
+  "serverchan_sendkey": "",
+  "webhook_url": "",
+  "log_file": "logs/availability_sleep_phone.log",
+  "latest_available_file": "logs/latest_available_sleep_phone.txt",
+  "headers": {},
+  "debug": false
+}
