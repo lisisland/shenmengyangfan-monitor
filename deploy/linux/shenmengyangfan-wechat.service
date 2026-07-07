@@ -1,0 +1,15 @@
+[Unit]
+Description=Shenmeng Yangfan availability monitor - WeChat mode
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/shenmengyangfan
+ExecStart=/usr/bin/python3 /opt/shenmengyangfan/monitor.py --config /opt/shenmengyangfan/config.json
+Restart=always
+RestartSec=10
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
